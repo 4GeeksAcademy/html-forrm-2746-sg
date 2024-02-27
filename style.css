@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    background-color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header {
+    /*border: 2px solid red;*/
+    margin-left: 200px auto;
+    background-color: white;
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+}
+.logo {
+    font-size: xx-large;
+    margin-right: 10px;
+}
+.footer {
+    width: 500px;
+    background-color: white;
+
+}
+img {
+    width: 500px;
+    height: 450px;
+    object-fit: cover;
+    object-position: bottom;
+}
+.puntos {
+    align-items: center;
+    display: flex;
+    font-size: x-large;
+    margin-right: 10px;
+}
+.emoticonos {
+    display:flex;
+    justify-content: space-between;
+}
+.text p {
+    margin-bottom: 50px;
+    height: 100px;
+}
