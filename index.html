@@ -1,54 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>document</title>
-   <link rel="stylesheet" href="style.css">
-   <script src="https://kit.fontawesome.com/c51138f570.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hello, world!</title>
 </head>
+
 <body>
-    <div class="post">
-        <div class="header">
-            <div class="logo-titulo">
-                <div class="logo">
-                    <i class="fa-brands fa-html5"></i>
-                </div>
-                <div class="title">
-                    <p>
-                        <strong>HTML5</strong><br>
-                        Rigoberto
-                    </p>
+    <div class="container">
+        <div class="card m-5">
+            <div class="card-header">
+                <h2>Payment form example</h2>
+            </div>
+            <div class="card-body ps-6 pe-6">
+                <div class="alert alert-danger m-6" role="alert">
+                    Some fields are missing
                 </div>
             </div>
-            <div class="puntos">
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-        </div>
-        <div class="photo">
-            <img src="https://i.blogs.es/3fd5a4/jumpstory-download20220511-143520/1366_2000.jpg"
-        </div>
-        <div class="footer">
-            <div class="emoticonos">
-                <div class="emoticonos1">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-comment"></i>
-                    <i class="fa-regular fa-paper-plane"></i>
+            <form class="form-control">
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="inputEmail4" class="form-label">Card#</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputPassword4" class="form-label">CVC#</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputPassword6" class="form-label">amount</label>
+                        <div class="d-flex">
+                            <i class="fa-duotone fa-dollar-sign"></i>
+                            <input type="amount" id="inputamount6" class="form-control" aria-describedby="amount">
+                        </div>
+                    </div>
                 </div>
-            <div class="emoticono2">
-                <i class="fa-regular fa-bookmark"></i>
-            </div>
-            </div>
-            <div class="gusta">
-                <p>Le gusta a <strong>emilio cabezas, Eric footman,</strong> and <strong>4geeks academy</strong> </p>
-            </div>
-            <div class="text">
-                <p>Paisaje natural en el que solo se ve la maravillosa naturaleza que da a pensar lo bonito que es el mundo, que con estos paisajes no se necesita
-                    mucho dinero, hay cosas mas importantes como esta belleza o la capacidad de llevar las riendas de tu vida, el amor o la amistad</p>
-            </div>
+                <div class="row">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-6">
+                            <label for="inputAddress" class="form-label">Firs name</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddress2" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Postal code </label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="inputZip" class="form-label">We accept</label>
+                            <div class="d-flex">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i
+                                            class="fa-brands fa-cc-mastercard"></i></label></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i
+                                            class="fa-brands fa-cc-visa"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3"><i
+                                            class="fa-brands fa-cc-paypal"></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3"><i
+                                            class="fa-brands fa-cc-apple-pay"></i></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="exampleFormControlTextarea1" class="form-label">Messaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <p>Add any notes here</p>
+                        </div>
+                    </div>
+                    <div class="space-between bg-light p-2">
+                        <button class="btn btn-secondary float-end" for="option1">Sing in</button>
+                        <button type="submit" class="btn btn-primary float-end">Cancel</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </body>
+<script src="https://kit.fontawesome.com/c51138f570.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
-
-
