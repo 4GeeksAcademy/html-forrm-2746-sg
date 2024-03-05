@@ -30,8 +30,10 @@
           </div>
           <div class="col-md-4">
             <label for="inputPassword6" class="form-label">amount</label>
-            <i class="fa-duotone fa-dollar-sign"></i>
-            <input type="amount" id="inputamount6" class="form-control" aria-describedby="amount">
+            <div class="d-flex">
+              <i class="fa-duotone fa-dollar-sign"></i>
+              <input type="amount" id="inputamount6" class="form-control" aria-describedby="amount">
+            </div>
           </div>
         </div>
         <div class="row">
@@ -56,7 +58,6 @@
               <option>...</option>
             </select>
           </div>
-
           <div class="col-md-2">
             <label for="inputZip" class="form-label">Postal code </label>
             <input type="text" class="form-control" id="inputZip">
@@ -92,21 +93,14 @@
             <div class="col-md-6">
               <label for="exampleFormControlTextarea1" class="form-label">Messaje</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              <figcaption class="blockquote-footer">
-                Add any notes here <cite title="Source Title">Source Title</cite>
-              </figcaption>
+              <p>Add any notes here</p>
             </div>
           </div>
-          <div class="col-12">
-            </div>
+          <div class="space-between bg-light p-2">
+              <button class="btn btn-secondary float-end" for="option1">Sing in</button>
+              <button type="submit" class="btn btn-primary float-end">Cancel</button>
           </div>
-          <div class="justify-content-end">
-            <div class="card-footer">
-                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                <label class="btn btn-secondary" for="option1">Cancel</label>
-                <button type="submit" class="btn btn-primary text-left">Sign in</button>
-              </div>
-            </div>
+        </div>
       </form>
     </div>
   </div>
